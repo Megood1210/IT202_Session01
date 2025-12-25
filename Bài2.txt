@@ -1,0 +1,26 @@
+1. Các thực thể
+ -Sinh viên: đại diện cho người học quản lý việc học trong một học kỳ.
+ -Môn học: đại diện cho các môn mà sinh viên đang theo học.
+ -Mục tiêu học tập: đại diện cho các mục tiêu mà sinh viên đặt ra cho từng môn học.
+2. Các thuộc tính cơ bản
+ -Sinh viên
+   +Mã sinh viên
+   +Tên sinh viên
+ -Môn học
+   +Mã môn học
+   +Tên môn học
+   +Số tín chỉ
+ -Mục tiêu học tập
+   +Mã mục tiêu
+   +Nội dung mục tiêu(đạt điểm cao, nắm vững kiến thức, hoàn thành bài tập đầy đủ)
+3. Mối quan hệ giữa các thực thể
+ *Sinh viên – Môn học
+   -Quan hệ: Học
+   -Kiểu quan hệ: 1 – N
+    +Một sinh viên có thể học nhiều môn học
+    +Mỗi môn học (trong phạm vi bài toán) thuộc về một sinh viên
+ *Môn học – Mục tiêu học tập
+   -Quan hệ: Có / Đặt
+   -Kiểu quan hệ: 1 – N
+    +Một môn học có thể có nhiều mục tiêu học tập
+    +Mỗi mục tiêu học tập chỉ thuộc về một môn học
